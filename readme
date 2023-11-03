@@ -1,0 +1,7 @@
+Para inicializar el proyecto primero instale todos sus componentes con 
+
+npm install
+
+Posteriormente puede ejecutar el proyecto sin problema
+
+El proyecto inicia con PETID de defecto sin embargo puede cambiar a tagtical cambiando a su respectivo ID
