@@ -1,0 +1,32 @@
+.product-item-cart {
+    color: white;
+
+    .image-product {
+        margin: auto;
+        padding: 0.8rem;
+        display: block;
+    }
+
+    .title-product {
+        margin-top: 0.7rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .price-product {}
+
+    .quantity-product {
+        border: 1px solid;
+        width: fit-content;
+        padding: 0.2rem 0.5rem;
+        font-size: 0.8rem;
+
+        span {
+            cursor: pointer;
+        }
+
+        .quantity {
+            padding: 0 1.2rem;
+        }
+    }
+}

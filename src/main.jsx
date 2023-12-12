@@ -11,6 +11,7 @@ import { RouterApp } from "./router/RouterApp";
     import("./scss/2/main.scss");
   }
 })();
+import "./scss/general.scss";
 import "./i18n";
 import "aos/dist/aos.css";
 import "@splidejs/react-splide/css";

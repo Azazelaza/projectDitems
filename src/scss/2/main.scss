@@ -1062,6 +1062,7 @@ button {
     @media (max-width:992px) {
       width: 90%;
     }
+
     @media (max-width:360px) {
       padding: 2rem 1rem;
     }
@@ -1132,7 +1133,7 @@ button {
       }
 
       img {
-        padding-right: 3rem;
+        padding: 0 5rem;
 
         @media(max-width:992px) {
           padding: 0;
@@ -1418,3 +1419,69 @@ button {
 }
 
 @import 'bootstrap';
+
+.pay-now {
+  background: #0d6601;
+  font-size: 1rem;
+  padding: 0.4rem 1.5rem;
+  border: 0px;
+  font-weight: 600;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    margin: .5rem 0;
+  }
+}
+
+.add-cart {
+  background: #0d6601;
+  font-size: 1rem;
+  padding: 0.4rem 1.5rem;
+  border: 0px;
+  margin-right: 1rem;
+  font-weight: 600;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    margin: .5rem 0;
+  }
+}
+
+.product-name {
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.product-text {
+  @media (max-width: 992px) {
+    margin: auto;
+  }
+}
+
+.image-petd img {
+  @media (max-width: 992px) {
+    width: 250px !important;
+  }
+}
+
+.cart-body {
+  background: $background-primary;
+  color: white;
+}
+
+.cart-icon-sidebar {
+  position: fixed;
+  z-index: 100000;
+  font-size: 20px;
+  cursor: pointer;
+  background: $background-primary;
+  right: 0;
+  top: 30%;
+  padding: 0.5rem 1.8rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  color: white;
+}
+.complete-cart{
+  font-weight: 600;
+}

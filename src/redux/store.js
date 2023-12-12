@@ -5,6 +5,7 @@ import PageContentSlice from './pageSlice/pageContentSlice'
 import productsSlice from './productsSlice/productsSlice'
 import MembershipSlice from './membershipSlice/membershipSlice'
 import ExpedienteSlice from './expediente/slice'
+import CartSlice from './cart/slice'
 
 export const store = configureStore({
     reducer: {
@@ -13,7 +14,8 @@ export const store = configureStore({
         modal: ModalSlice,
         products: productsSlice,
         membership: MembershipSlice,
-        expediente: ExpedienteSlice
+        expediente: ExpedienteSlice,
+        cart: CartSlice
     },
     middleware: getDefaultMiddleware =>
         getDefaultMiddleware({

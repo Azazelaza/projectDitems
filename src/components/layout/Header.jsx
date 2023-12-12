@@ -1,5 +1,12 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Nav, Navbar, Offcanvas, Button, Dropdown, Image } from "react-bootstrap";
+import {
+  Nav,
+  Navbar,
+  Offcanvas,
+  Button,
+  Dropdown,
+  Image,
+} from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import ModalLogin from "../../components/modal/ModalLogin";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +19,7 @@ import {
 import { startShowModal } from "../../redux/modal/thunk";
 import { ProductModal } from "../modal/ProductModal";
 import { Link, useLocation } from "react-router-dom";
-import { Imagecompany } from "../ui/Imagecompany";
+import { Cart } from "../ui/Cart";
 
 export const Header = () => {
   const { status, email } = useSelector((state) => state.auth);
@@ -102,6 +109,7 @@ export const Header = () => {
 
                 <Dropdown.Menu>
                   {data.map((item, key) => (
+                    !!item.quantity &&
                     <Dropdown.Item key={key} onClick={() => openPetId(item)}>
                       {item.name}
                     </Dropdown.Item>
@@ -137,6 +145,7 @@ export const Header = () => {
       </Navbar>
       <ModalLogin />
       <ProductModal />
+      <Cart />
     </>
   );
 };
